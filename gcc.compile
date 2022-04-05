@@ -1,0 +1,1 @@
+gcc -o tcpxfer2 config.c main.c rate.c -lm -lev -ggdb
