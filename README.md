@@ -24,6 +24,8 @@ This is written with libev and libgsl requirements.
 
 # Implementation
 
+Stats are picked up using an internal TCP getsockopt() call as the kernel itself keeps stats on each individual TCP connection.
+
 The stats are correlated using the pearson coefficient, what we're actually trying to measure is the gradient of the pearson correlation over the X axis. That is -- how 'horizontal' the line is.
 
 Typically on a standard, non-congested throughput of TCP this line should be horizontal. If the link is congested this results in a 'sawtooth' TCP tran
