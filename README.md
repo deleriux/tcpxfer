@@ -9,7 +9,7 @@ This program constantly sends both ways a configured throughput and collects tcp
 
 We maintain an ongoing state against a constantly sliding window.
 
-In that case, we would report the issue to the client.
+In the case the SLA was breached. This would report to standard out (the result of which was piped into a slack channel).
 
 # Purpose
 
