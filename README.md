@@ -37,4 +37,4 @@ It is a singularly threaded program. Multithreading this really isn't going to h
 
 The device itself might have multiple ring buffers (not unusual on high performance devices) and multiple hardware contexts to process the packets but thats a free-of-charge cost you dont have to implement for.
 
-An interesting quirk I did find is that if you want to do really high throughputs (~1gbps+) you need to measure the timerfd overruns as its trivial to miss cycles and thus not drive the proper packet generation at the correct intervals.
+An interesting quirk I did find is that if you want to do high throughputs (~1gbps+) you need to measure the timerfd overruns as its trivial to miss cycles and thus not drive the proper packet generation at the correct intervals.
