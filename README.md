@@ -3,7 +3,7 @@ tcpxfer
 
 Run a constant throughnput analysis between two hosts and report significant deviations from expected performance.
 
-This is client project that was used to guarantee an expected SLA between two endpoints.
+This is a client project that was used to guarantee an expected SLA between two endpoints.
 
 This program constantly sends both ways a configured throughput and collects tcp performance stats into a sliding window.
 
